@@ -9,8 +9,9 @@ import com.mycompany.store.security.AuthoritiesConstants;
 import com.mycompany.store.security.SecurityUtils;
 import com.mycompany.store.service.dto.UserDTO;
 import com.mycompany.store.service.util.RandomUtil;
-import com.mycompany.store.web.rest.errors.*;
-
+import com.mycompany.store.web.rest.errors.EmailAlreadyUsedException;
+import com.mycompany.store.web.rest.errors.InvalidPasswordException;
+import com.mycompany.store.web.rest.errors.LoginAlreadyUsedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.CacheManager;

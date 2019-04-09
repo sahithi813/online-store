@@ -1,11 +1,9 @@
 package com.mycompany.store.web.rest;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mycompany.store.security.jwt.JWTFilter;
 import com.mycompany.store.security.jwt.TokenProvider;
 import com.mycompany.store.web.rest.vm.LoginVM;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

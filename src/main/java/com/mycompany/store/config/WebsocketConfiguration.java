@@ -1,10 +1,7 @@
 package com.mycompany.store.config;
 
 import com.mycompany.store.security.AuthoritiesConstants;
-
-import java.security.Principal;
-import java.util.*;
-
+import io.github.jhipster.config.JHipsterProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.server.*;
@@ -16,7 +13,11 @@ import org.springframework.web.socket.config.annotation.*;
 import org.springframework.web.socket.server.HandshakeInterceptor;
 import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
 
-import io.github.jhipster.config.JHipsterProperties;
+import java.security.Principal;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Optional;
 
 @Configuration
 @EnableWebSocketMessageBroker

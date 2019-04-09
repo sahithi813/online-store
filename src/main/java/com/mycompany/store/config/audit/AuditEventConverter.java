@@ -1,7 +1,6 @@
 package com.mycompany.store.config.audit;
 
 import com.mycompany.store.domain.PersistentAuditEvent;
-
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Component;

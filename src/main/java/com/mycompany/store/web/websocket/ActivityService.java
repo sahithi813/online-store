@@ -1,12 +1,6 @@
 package com.mycompany.store.web.websocket;
 
-import static com.mycompany.store.config.WebsocketConfiguration.IP_ADDRESS;
-
 import com.mycompany.store.web.websocket.dto.ActivityDTO;
-
-import java.security.Principal;
-import java.time.Instant;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
@@ -15,6 +9,11 @@ import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.socket.messaging.SessionDisconnectEvent;
+
+import java.security.Principal;
+import java.time.Instant;
+
+import static com.mycompany.store.config.WebsocketConfiguration.IP_ADDRESS;
 
 @Controller
 public class ActivityService implements ApplicationListener<SessionDisconnectEvent> {

@@ -1,8 +1,8 @@
 package com.mycompany.store.config;
 
-import com.mycompany.store.security.*;
-import com.mycompany.store.security.jwt.*;
-
+import com.mycompany.store.security.AuthoritiesConstants;
+import com.mycompany.store.security.jwt.JWTConfigurer;
+import com.mycompany.store.security.jwt.TokenProvider;
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

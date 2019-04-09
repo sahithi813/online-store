@@ -1,14 +1,12 @@
 package com.mycompany.store.service.dto;
 
 import com.mycompany.store.config.Constants;
-
 import com.mycompany.store.domain.Authority;
 import com.mycompany.store.domain.User;
 
+import javax.validation.constraints.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-
-import javax.validation.constraints.*;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;
