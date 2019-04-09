@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.mycompany.store",
+            "nativeLanguage": "en"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "store",
+        "packageName": "com.mycompany.store",
+        "packageFolder": "com/mycompany/store",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "hazelcast",
+        "enableHibernateCache": true,
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "gradle",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "ZmY1ODZhMDQxYWUxYjRiN2I2MWJlOThmN2NiM2Y4MDQzMTI2MGRlOGIxMjM5YTU4MDIwMTgxMTU3ZTU2NTBmY2YxODE0MGRhNGI3YzlhNmI4ZWRmMTY0Yzk3NDJmMGRhOTU2NzE3YjUyN2U1NzFmMGZhZWM5ZWM4ZDE1NTdjNTg=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["protractor"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "en",
+        "languages": ["en", "zh-cn"]
+    }
+}
