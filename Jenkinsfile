@@ -10,7 +10,7 @@ node {
     }
 
     stage('clean') {
-        bat "chmod +x gradlew"
+        //bat "chmod +x gradlew"
         //bat "./gradlew clean --no-daemon"
         bat "gradlew.bat clean --no-daemon"
     }
