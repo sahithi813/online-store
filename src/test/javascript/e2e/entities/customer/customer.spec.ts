@@ -35,9 +35,10 @@ describe('Customer e2e test', () => {
         await customerUpdatePage.cancel();
     });
 
-    /* it('should create and save Customers', async () => {
+    it('should create and save Customers', async () => {
         const nbButtonsBeforeCreate = await customerComponentsPage.countDeleteButtons();
-
+        customerDialogPage.setEmailInput('email@email.com');
+        expect(customerDialogPage.getEmailInput()).toMatch('email@email.com');
         await customerComponentsPage.clickOnCreateButton();
         await promise.all([
             customerUpdatePage.setFirstNameInput('firstName'),
@@ -49,7 +50,7 @@ describe('Customer e2e test', () => {
             customerUpdatePage.setAddressLine2Input('addressLine2'),
             customerUpdatePage.setCityInput('city'),
             customerUpdatePage.setCountryInput('country'),
-            customerUpdatePage.userSelectLastOption(),
+            customerUpdatePage.userSelectLastOption()
         ]);
         expect(await customerUpdatePage.getFirstNameInput()).to.eq('firstName');
         expect(await customerUpdatePage.getLastNameInput()).to.eq('lastName');
@@ -63,7 +64,7 @@ describe('Customer e2e test', () => {
         expect(await customerUpdatePage.getSaveButton().isPresent()).to.be.false;
 
         expect(await customerComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeCreate + 1);
-    });*/
+    });
 
     /* it('should delete last Customer', async () => {
         const nbButtonsBeforeDelete = await customerComponentsPage.countDeleteButtons();
