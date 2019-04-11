@@ -5,9 +5,9 @@ node {
         checkout scm
     }
 
-    stage('check java') {
+  /*  stage('check java') {
         sh "java -version"
-    }
+    }*/
 
     stage('clean') {
         sh "chmod +x gradlew"
